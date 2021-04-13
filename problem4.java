@@ -33,39 +33,40 @@
 
 
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// public class Solution {
+public class Solution {
 
-//     public static void main(String[] args) {
-//             Scanner sc=new Scanner(System.in);
-//             System.out.println("================================");
-//             for(int i=0;i<3;i++){
-//                 String s1=sc.next();
-//                 int x=sc.nextInt();
-//                 int len = s1.length();
-//                 int tlen=15-len;
-//                 int y=x,count=0;
-//                 if(y!=0){
-//                 while(y!=0){
-//                     y=y/10;
-//                     count++;
-//                 }}
-//                 System.out.print(s1);
-//                 for(int j=0;j<tlen;j++){
-//                   System.out.print(" ");  
-//                 }
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                int x=sc.nextInt();
+                //System.out.printf("%-15s%03d%n",s1,x);
+                int len = s1.length();
+                int tlen=15-len;
+                int y=x,count=0;
+                if(y!=0){
+                while(y!=0){
+                    y=y/10;
+                    count++;
+                }}
+                System.out.print(s1);
+                for(int j=0;j<tlen;j++){
+                  System.out.print(" ");  
+                }
                 
-//                 for(int j=count;j<3;j++){
-//                     System.out.print(0);
-//                 }
-//                 if(x!=0)
-//                 System.out.println(x);
-//                 else
-//                 System.out.println();
+                for(int j=count;j<3;j++){
+                    System.out.print(0);
+                }
+                if(x!=0)
+                System.out.println(x);
+                else
+                System.out.println();
                 
-//             }
-//             System.out.println("================================");
+            }
+            System.out.println("================================");
 
-//     }
-// }
+    }
+}
